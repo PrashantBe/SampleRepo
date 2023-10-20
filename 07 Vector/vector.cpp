@@ -1,20 +1,21 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 #include "vector.h"
 using namespace std;
+// Comment
 
-
-int main(){
+int main()
+{
 
 	Vector<char> vc;
 	vc.push_back('a');
 	vc.push_back('b');
 	vc.push_back('c');
 
-	for(int i=0;i < vc.size();i++){
-		cout << vc[i] <<endl;
+	for (int i = 0; i < vc.size(); i++)
+	{
+		cout << vc[i] << endl;
 	}
-
 
 	Vector<int> v(5);
 
@@ -26,16 +27,16 @@ int main(){
 	v.push_back(6);
 	v.pop_back();
 
-	cout<< v.front() <<endl;
-	cout<< v.back() <<endl;
+	cout << v.front() << endl;
+	cout << v.back() << endl;
 
-	cout<< v.at(2) <<endl;
+	cout << v.at(2) << endl;
 
-	cout<< v.size() <<endl; //5
-	cout<< v.capacity() <<endl; //8
+	cout << v.size() << endl;	  // 5
+	cout << v.capacity() << endl; // 8
 
-	for(int i=0;i<v.size();i++){
-		cout<< v[i] <<",";
+	for (int i = 0; i < v.size(); i++)
+	{
+		cout << v[i] << ",";
 	}
-
 }
